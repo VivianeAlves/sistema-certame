@@ -5,6 +5,8 @@
  */
 package gestaocpc;
 
+import br.com.gestaocpc.visao.menu;
+
 /**
  *
  * @author Viviane Alves
@@ -16,6 +18,12 @@ public class Gestaocpc {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new menu().setVisible(true);
+            }
+        });
+        
     }
     
 }
